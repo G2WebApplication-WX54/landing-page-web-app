@@ -126,7 +126,219 @@ body {
     color: #ffbc0e;
 }
 
+.header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
 
+@media screen and (max-height: 450px) {
+    .header .overlay a {
+        font-size: 20px;
+    }
+
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* #####Inicio##### */
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0A3468; /* O cualquier otro color de fondo que prefieras */
+}
+
+.contenedor-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inicio-logo-y-eslogan {
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio-logo {
+    margin-left: 40px; /* Ajusta este valor según la cantidad que deseas mover el logo a la derecha */
+    width: 500px; /* O un valor específico en pixels o viewport widths (vw) */
+    height: auto; /* Esto mantiene la relación de aspecto del logo */
+}
+
+.inicio-eslogan {
+    font-size: 2em; /* Aumenta el tamaño del texto del eslogan */
+    color: white; /* O cualquier otro color de texto que prefieras */
+    text-align: center; /* Esto centra el eslogan debajo del logo */
+    margin-top: 20px; /* Agrega un margen en la parte superior si es necesario para separar el eslogan del logo */
+}
+
+.inicio-imagen-mapa {
+    max-width: 50%; /* Ajusta la anchura máxima del contenedor del mapa según tus necesidades */
+    height: auto; /* Esto mantiene la relación de aspecto de la imagen del mapa */
+    text-align: right; /* Alinea la imagen del mapa a la derecha */
+}
+
+.mapa-imagen {
+    width: 100%; /* Esto hará que la imagen del mapa se ajuste al contenedor */
+    height: auto; /* Esto mantiene la relación de aspecto de la imagen del mapa */
+}
+
+/* #####Servicios##### */
+
+.contenedor-planes-texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-planes-texto h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.servicios-planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0A3468;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plan {
+    flex: 1 0 20%;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: white;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+}
+
+.plan:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+.plan h3 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.plan p {
+    color: #000000;
+    margin: 0; /* Elimina el margen para permitir que flexbox maneje el espaciado */
+    line-height: 1.6;
+    padding: 10px 0; /* Añade padding para crear espacio alrededor del texto, si es necesario */
+}
+
+.plan button {
+    padding: 15px 25px;
+    color: white;
+    border-radius: 30px;
+    background: #01A1FF;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.contact:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #01A1FF;
+    background-size: cover;
+    z-index: -1;
+}
+.contact-box {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+}
+
+.left {
+    background-size: cover;
+    height: 100%;
+}
+
+.right {
+    padding: 25px 40px;
+}
+
+h4 {
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+h4:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #01A1FF;
+}
+
+.field {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.field:hover {
+    background-color: #01A1FF;
+}
+
+textarea {
+    min-height: 150px;
+}
 
 
 

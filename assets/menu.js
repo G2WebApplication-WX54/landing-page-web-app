@@ -6,15 +6,15 @@ function closeNav() {
     document.getElementById("mobile-menu").style.width = "0%";
 }
 
-const nosotros = document.querySelector("#nosotros");
+const about = document.querySelector("#about");
 const app = document.querySelector("#app");
-const servicios = document.querySelector("#servicios");
-const planes = document.querySelector("#planes");
-const contacto = document.querySelector("#contacto");
+const services = document.querySelector("#services");
+const planes = document.querySelector("#plans");
+const contact = document.querySelector("#contact");
 
-nosotros.addEventListener("click", (n) => {
+about.addEventListener("click", (n) => {
     n.preventDefault();
-    const selectionN = document.querySelector("#nosotros-section");
+    const selectionN = document.querySelector("#about-section");
     selectionN.scrollIntoView({ behavior: "smooth" });
 });
 app.addEventListener("click", (cr) => {
@@ -22,32 +22,32 @@ app.addEventListener("click", (cr) => {
     const selectionCr = document.querySelector("#app-section");
     selectionCr.scrollIntoView({ behavior: "smooth" });
 });
-servicios.addEventListener("click", (s) => {
+services.addEventListener("click", (s) => {
     s.preventDefault();
-    const selectionS = document.querySelector("#servicios-section");
+    const selectionS = document.querySelector("#services-section");
     selectionS.scrollIntoView({ behavior: "smooth" });
 });
-planes.addEventListener("click", (p) => {
+plans.addEventListener("click", (p) => {
     p.preventDefault();
-    const selectionP = document.querySelector("#planes-section");
+    const selectionP = document.querySelector("#plans-section");
     selectionP.scrollIntoView({ behavior: "smooth" });
 });
 
-contacto.addEventListener("click", (c) => {
+contact.addEventListener("click", (c) => {
     c.preventDefault();
     const selectionC = document.querySelector("#contact-section");
     selectionC.scrollIntoView({ behavior: "smooth" });
 });
 
-const nosotros2 = document.querySelector("#nosotros2");
-const servicios2 = document.querySelector("#servicios2");
-const planes2 = document.querySelector("#planes2");
+const about2 = document.querySelector("#about2");
+const services2 = document.querySelector("#services2");
+const plans2 = document.querySelector("#plans2");
 const app2 = document.querySelector("#app2");
-const contacto2 = document.querySelector("#contacto2");
+const contact2 = document.querySelector("#contact2");
 
-nosotros2.addEventListener("click", (n) => {
+about2.addEventListener("click", (n) => {
     n.preventDefault();
-    const selectionN = document.querySelector("#nosotros-section");
+    const selectionN = document.querySelector("#about-section");
     selectionN.scrollIntoView({ behavior: "smooth" });
     closeNav();
 });
@@ -57,19 +57,19 @@ app2.addEventListener("click", (cr) => {
     selectionCr.scrollIntoView({ behavior: "smooth" });
     closeNav();
 });
-servicios2.addEventListener("click", (s) => {
+services2.addEventListener("click", (s) => {
     s.preventDefault();
-    const selectionS = document.querySelector("#servicios-section");
+    const selectionS = document.querySelector("#services-section");
     selectionS.scrollIntoView({ behavior: "smooth" });
     closeNav();
 });
-planes2.addEventListener("click", (p) => {
+plans2.addEventListener("click", (p) => {
     p.preventDefault();
-    const selectionP = document.querySelector("#planes-section");
+    const selectionP = document.querySelector("#plans-section");
     selectionP.scrollIntoView({ behavior: "smooth" });
     closeNav();
 });
-contacto2.addEventListener("click", (c) => {
+contact2.addEventListener("click", (c) => {
     c.preventDefault();
     const selectionC = document.querySelector("#contact-section");
     selectionC.scrollIntoView({ behavior: "smooth" });

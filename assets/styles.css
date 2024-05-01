@@ -1,343 +1,341 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #f2efdc;
-    min-width: 400px;
+  background-color: #f2efdc;
+  min-width: 400px;
 }
 
 .header {
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
 }
 
 .header .logo {
-    cursor: pointer;
-    margin-right: auto;
+  cursor: pointer;
+  margin-right: auto;
 }
 
 .header .logo img {
-    height: 80px;
-    width: auto;
-    border-radius: 10%;
-    transition: all 0.3s;
+  height: 80px;
+  width: auto;
+  border-radius: 10%;
+  transition: all 0.3s;
 }
 .header .logo img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .header .nav-links {
-    list-style: none;
+  list-style: none;
 }
 .header .nav-links li {
-    display: inline-block;
-    padding: 0 20px;
+  display: inline-block;
+  padding: 0 20px;
 }
 .header .nav-links li:hover,
 .overlay a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .header .nav-links a {
-    font-size: 700;
-    color: #eceff1;
+  font-size: 700;
+  color: #eceff1;
 }
 .header .nav-links a:hover {
-    color: #ffbc0e;
+  color: #ffbc0e;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 .header .btn button,
 .header .menu button {
-    margin-left: 20px;
-    font-weight: 700;
-    color: #1b3039;
-    padding: 9px 25px;
-    background: #eceff1;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+  margin-left: 20px;
+  font-weight: 700;
+  color: #1b3039;
+  padding: 9px 25px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 .header .btn button:hover,
 .header .menu button:hover {
-    background-color: #e2f1f8;
-    color: #ffbc0e;
-    transform: scale(1.1);
+  background-color: #e2f1f8;
+  color: #ffbc0e;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 905px) {
-    .nav-links,
-    .btn {
-        display: none;
-    }
+  .nav-links,
+  .btn {
+      display: none;
+  }
 
-    .menu {
-        display: inherit;
-    }
+  .menu {
+      display: inherit;
+  }
 }
 
 .header a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .header .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: rgba(33, 44, 63, 0.95);
-    overflow: hidden;
-    transition: all 0.3s ease 0s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(33, 44, 63, 0.95);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
 }
 
 .header .overlay .overlay-content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .overlay a {
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0s;
-    font-weight: 700;
-    color: #eceff1;
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
 }
 
 .header .overlay a:hover,
 .header .overlay a:focus {
-    color: #ffbc0e;
+  color: #ffbc0e;
 }
 
 .header .overlay .close {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 65px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
 }
 
 @media screen and (max-height: 450px) {
-    .header .overlay a {
-        font-size: 20px;
-    }
+  .header .overlay a {
+      font-size: 20px;
+  }
 
-    .header .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
+  .header .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+}
+/* ##### Start Section ##### */
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #0A3468; /* Or any other background color you prefer */
 }
 
-/* #####Inicio##### */
-
-.inicio {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #0A3468; /* O cualquier otro color de fondo que prefieras */
+.start-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.contenedor-inicio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.start-logo-and-slogan {
+  flex-direction: column;
+  align-items: center;
 }
 
-.inicio-logo-y-eslogan {
-    flex-direction: column;
-    align-items: center;
+.start-logo {
+  margin-left: 40px; /* Adjust this value to move the logo to the right as needed */
+  width: 500px; /* Or a specific value in pixels or viewport widths (vw) */
+  height: auto; /* This maintains the aspect ratio of the logo */
 }
 
-.inicio-logo {
-    margin-left: 40px; /* Ajusta este valor según la cantidad que deseas mover el logo a la derecha */
-    width: 500px; /* O un valor específico en pixels o viewport widths (vw) */
-    height: auto; /* Esto mantiene la relación de aspecto del logo */
+.start-slogan {
+  font-size: 2em; /* Increase the text size of the slogan */
+  color: white; /* Or any other text color you prefer */
+  text-align: center; /* This centers the slogan under the logo */
+  margin-top: 20px; /* Add a margin at the top if needed to separate the slogan from the logo */
 }
 
-.inicio-eslogan {
-    font-size: 2em; /* Aumenta el tamaño del texto del eslogan */
-    color: white; /* O cualquier otro color de texto que prefieras */
-    text-align: center; /* Esto centra el eslogan debajo del logo */
-    margin-top: 20px; /* Agrega un margen en la parte superior si es necesario para separar el eslogan del logo */
+.start-map-image {
+  max-width: 50%; /* Adjust the maximum width of the map container as needed */
+  height: auto; /* This maintains the aspect ratio of the map image */
+  text-align: right; /* Aligns the map image to the right */
 }
 
-.inicio-imagen-mapa {
-    max-width: 50%; /* Ajusta la anchura máxima del contenedor del mapa según tus necesidades */
-    height: auto; /* Esto mantiene la relación de aspecto de la imagen del mapa */
-    text-align: right; /* Alinea la imagen del mapa a la derecha */
+.map-image {
+  width: 100%; /* This will make the map image fit to the container */
+  height: auto; /* This maintains the aspect ratio of the map image */
 }
 
-.mapa-imagen {
-    width: 100%; /* Esto hará que la imagen del mapa se ajuste al contenedor */
-    height: auto; /* Esto mantiene la relación de aspecto de la imagen del mapa */
+/* ##### Services ##### */
+
+.plans-container-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-/* #####Servicios##### */
-
-.contenedor-planes-texto {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.plans-container-text h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.contenedor-planes-texto h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #000000;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.servicios-planes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background-color: #0A3468;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.services-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0A3468;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .plan {
-    flex: 1 0 20%;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 0 10px;
-    background-color: white;
-    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    text-align: center;
-
-    flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido */
+  flex: 1 0 20%;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: white;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
 }
 
 .plan:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.2);
 }
 
 .plan h3 {
-    font-size: 2em;
-    color: #000000;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .plan p {
-    color: #000000;
-    margin: 0; /* Elimina el margen para permitir que flexbox maneje el espaciado */
-    line-height: 1.6;
-    padding: 10px 0; /* Añade padding para crear espacio alrededor del texto, si es necesario */
+  color: #000000;
+  margin: 0; /* Removes margin to allow flexbox to handle spacing */
+  line-height: 1.6;
+  padding: 10px 0; /* Adds padding to create space around the text, if needed */
 }
 
 .plan button {
-    padding: 15px 25px;
-    color: white;
-    border-radius: 30px;
-    background: #01A1FF;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background 0.3s ease;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 30px;
+  background: #01A1FF;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
 }
-
 .contact {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 100px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
 }
 
 .contact:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-color: #01A1FF;
-    background-size: cover;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #01A1FF;
+  background-size: cover;
+  z-index: -1;
 }
+
 .contact-box {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
 }
 
 .left {
-    background-size: cover;
-    height: 100%;
+  background-size: cover;
+  height: 100%;
 }
 
 .right {
-    padding: 25px 40px;
+  padding: 25px 40px;
 }
 
 h4 {
-    position: relative;
-    padding: 0 0 10px;
-    margin-bottom: 10px;
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
 }
 
 h4:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #01A1FF;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #01A1FF;
 }
 
 .field {
-    width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0);
-    outline: none;
-    background-color: rgba(230, 230, 230, 0.6);
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: 0.3s;
+  width: 100%;
+  border: 2px solid transparent;
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
 }
 
 .field:hover {
-    background-color: #01A1FF;
+  background-color: #01A1FF;
 }
 
 textarea {
-    min-height: 150px;
+  min-height: 150px;
 }
 
 .bton {
@@ -363,17 +361,19 @@ textarea {
 
 @media screen and (max-width: 880px) {
   .contact-box {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   }
   .left {
-    height: 200px;
+      height: 200px;
   }
 }
-.nosotros {
+
+.about-us {
   padding: 2rem 0;
   background-color: #01A1FF;
 }
-.contenedor-nosotros {
+
+.about-us-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -381,7 +381,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.contenedor-nosotros h2 {
+.about-us-container h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -389,7 +389,8 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.servicios-planes h2 {
+
+.services-plans h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -401,7 +402,7 @@ textarea {
   padding: 2rem 0;
   background-color: #0A3468;
 }
-.contenedor-app {
+.app-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -409,7 +410,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.contenedor-app h2 {
+.app-container h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -417,25 +418,25 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.app-imagen {
-  text-align: center; /* Centra la imagen dentro del contenedor */
+.app-image {
+  text-align: center; /* Centers the image within the container */
 }
-.app-imagen img {
+.app-image img {
   width: 200px;
-  height: auto; /* Mantiene la relación de aspecto */
-  display: block; /* Asegura que la imagen se muestre como un bloque */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Ensures the image is displayed as a block */
+  margin: 0 auto; /* Centers the image horizontally */
 }
 .images-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Si quieres que las imágenes estén alineadas verticalmente */
+  align-items: center; /* If you want the images to be vertically aligned */
 }
 .images-container a img {
   margin-top: 40px;
   max-width: 80%;
   height: auto;
-  text-align: center; /* Alinea el texto (y las imágenes si su contenedor <a> no tiene un ancho definido) al centro */
+  text-align: center; /* Centers the text (and images if their <a> container does not have a defined width) in the center */
   flex: 1 0 20%;
   padding: 20px;
   margin: 0 10px;
@@ -444,8 +445,8 @@ textarea {
 }
 
 .images-container a {
-  flex: 1; /* Esto permite que los enlaces ocupen el espacio disponible */
-  text-align: center; /* Centra las imágenes dentro de los enlaces */
+  flex: 1; /* This allows the links to occupy the available space */
+  text-align: center; /* Centers the images within the links */
 }
 .containerN {
   width: 90%;
@@ -462,13 +463,13 @@ textarea {
     16px,
     4vw,
     30px
-  ); /* Mínimo 16px, tamaño preferido 4vw, máximo 40px */
+  ); /* Minimum 16px, preferred size 4vw, maximum 40px */
 }
-.Servicios {
+.services {
   padding: 2rem 0rem;
   background: #01A1FF;
 }
-.subServicios h2 {
+.subServices h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -485,10 +486,10 @@ textarea {
 }
 
 .image-column {
-  text-align: center; /* Alinea el texto (y las imágenes si su contenedor <a> no tiene un ancho definido) al centro */
+  text-align: center; /* Aligns the text (and images if their <a> container does not have a defined width) in the center */
   width: calc(
     33.333% - 40px
-  ); /* Ajusta este valor según el 'gap' para asegurar que los elementos se distribuyan equitativamente */
+  ); /* Adjust this value according to the 'gap' to ensure that the elements are evenly distributed */
   flex: 1 0 20%;
   border-radius: 30px;
   padding: 20px;
@@ -507,18 +508,18 @@ textarea {
     16px,
     4vw,
     40px
-  ); /* Mínimo 16px, tamaño preferido 4vw, máximo 40px */
-  color: white; /* Ajusta el color del texto según tu diseño */
-  margin-top: 0; /* Elimina el margen superior para acercar el texto a la imagen */
+  ); /* Minimum 16px, preferred size 4vw, maximum 40px */
+  color: white; /* Adjust the text color according to your design */
+  margin-top: 0; /* Removes the top margin to bring the text closer to the image */
 }
 .image-column p2 {
   font-size: clamp(
     10px,
     3.5vw,
     26px
-  ); /* Mínimo 18px, valor relativo a la ventana gráfica 4vw, máximo 36px */
-  color: white; /* Ajusta el color del texto según tu diseño */
-  margin-top: 0; /* Elimina el margen superior para acercar el texto a la imagen */
+  ); /* Minimum 18px, viewport relative size 4vw, maximum 36px */
+  color: white; /* Adjust the text color according to your design */
+  margin-top: 0; /* Removes the top margin to bring the text closer to the image */
 }
 .image-column:hover {
   transform: scale(1.05);
@@ -528,7 +529,7 @@ textarea {
   box-shadow: 0px 0px 0px -10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para el pie de pÃ¡gina */
+/* Styles for the footer */
 footer {
   display: flex;
   justify-content: center;
@@ -542,26 +543,26 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Separa el texto y los íconos */
+  justify-content: space-between; /* Separates the text and icons */
   align-items: center;
-  width: 100%; /* Utiliza todo el ancho del footer */
+  width: 100%; /* Uses the entire width of the footer */
 }
 
 .social-icons {
   display: flex;
-  justify-content: flex-end; /* Alinea los íconos a la derecha */
-  margin-right: 40px; /* Desplaza el texto ligeramente a la derecha */
+  justify-content: flex-end; /* Aligns the icons to the right */
+  margin-right: 40px; /* Slightly shifts the text to the right */
 }
 
 .social-icons img {
-  margin-left: 10px; /* Espacio entre los íconos */
+  margin-left: 10px; /* Space between icons */
 }
 .footer-text {
-  flex: 1; /* Permite que el texto ocupe todo el espacio necesario */
-  text-align: center; /* Asegura que el texto esté centrado */
-  margin-left: 140px; /* Desplaza el texto ligeramente a la derecha */
+  flex: 1; /* Allows the text to occupy all the necessary space */
+  text-align: center; /* Ensures the text is centered */
+  margin-left: 140px; /* Slightly shifts the text to the right */
 }
-.tiulo-creadores {
+.title-creators {
   display: flex;
   margin: 5px 0;
   justify-content: center;
@@ -570,14 +571,14 @@ footer {
   flex-direction: row;
 }
 
-.creadores-titulo {
+.creators-title {
   justify-content: center;
   flex-direction: row;
   text-align: center;
   color: #000000;
 }
 
-/* Estilos para el contenedor de creadores */
+/* Styles for the creators container */
 .creators-container {
   display: flex;
   flex-wrap: wrap;
@@ -587,7 +588,7 @@ footer {
   background-color: #f49c7c;
 }
 
-/* Estilos para cada creador */
+/* Styles for each creator */
 .creator {
   margin: 20px;
   display: flex;
@@ -595,7 +596,7 @@ footer {
   align-items: center;
 }
 
-.img-creadores {
+.creators-img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

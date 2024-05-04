@@ -80,11 +80,11 @@ body {
 @media screen and (max-width: 905px) {
   .nav-links,
   .btn {
-      display: none;
+    display: none;
   }
 
   .menu {
-      display: inherit;
+    display: inherit;
   }
 }
 
@@ -135,64 +135,143 @@ body {
 
 @media screen and (max-height: 450px) {
   .header .overlay a {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .header .overlay .close {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
-/* ##### Start Section ##### */
 
-.start {
-  display: flex;
+
+/* #####Inicio##### */
+
+
+.inicio {
+  display: block;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #0A3468; /* Or any other background color you prefer */
+  background-color:  #0A3468; /* O cualquier otro color de fondo que prefieras */
+
+}
+.mapa-imagen {
+  visibility: hidden;
+}
+.inicio-logo-y-eslogan{
+  display: block;
+  margin: auto;
+}
+.inicio-logo {
+  max-width: 50%;
+  max-height: 50%;
+  display: block;
 }
 
-.start-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.inicio-eslogan{
+  margin-bottom: 20px;
 }
 
-.start-logo-and-slogan {
-  flex-direction: column;
-  align-items: center;
+.contenedor-inicio{
+  height: 14rem;
 }
 
-.start-logo {
-  margin-left: 40px; /* Adjust this value to move the logo to the right as needed */
-  width: 500px; /* Or a specific value in pixels or viewport widths (vw) */
-  height: auto; /* This maintains the aspect ratio of the logo */
+.left{
+  display: none
 }
 
-.start-slogan {
-  font-size: 2em; /* Increase the text size of the slogan */
-  color: white; /* Or any other text color you prefer */
-  text-align: center; /* This centers the slogan under the logo */
-  margin-top: 20px; /* Add a margin at the top if needed to separate the slogan from the logo */
+/* Responsive */
+@media (min-width: 390px) {
+  .inicio-logo {
+    visibility: hidden;
+  }
+
+  .mapa-imagen {
+    visibility: hidden;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .contenedor-inicio {
+    display: block;
+  }
 }
 
-.start-map-image {
-  max-width: 50%; /* Adjust the maximum width of the map container as needed */
-  height: auto; /* This maintains the aspect ratio of the map image */
-  text-align: right; /* Aligns the map image to the right */
+
+@media (min-width: 768px){
+  .inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0A3468; /* O cualquier otro color de fondo que prefieras */
+  }
+
+  .contenedor-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .mapa-imagen {
+    visibility: visible;
+    max-width: 400px;
+  }
+
+  .inicio-logo{
+    max-width: 88%;
+    max-height: 88%;
+    visibility: visible;
+
+  }
+  .inicio-logo-y-eslogan {
+    flex-direction: column;
+    align-items: center;
+  }
+  * {
+
+    font-size: 18px;
+
+  }
+
 }
 
-.map-image {
-  width: 100%; /* This will make the map image fit to the container */
-  height: auto; /* This maintains the aspect ratio of the map image */
+
+/* Fin Responsive */
+
+
+
+
+
+.inicio-logo {
+  margin-left: 40px; /* Ajusta este valor según la cantidad que deseas mover el logo a la derecha */
+  width: 500px; /* O un valor específico en pixels o viewport widths (vw) */
+  height: auto; /* Esto mantiene la relación de aspecto del logo */
 }
 
-/* ##### Services ##### */
+.inicio-eslogan {
+  font-size: 2em; /* Aumenta el tamaño del texto del eslogan */
+  color: white; /* O cualquier otro color de texto que prefieras */
+  text-align: center; /* Esto centra el eslogan debajo del logo */
+  margin-top: 20px; /* Agrega un margen en la parte superior si es necesario para separar el eslogan del logo */
+}
 
-.plans-container-text {
+.inicio-imagen-mapa {
+  max-width: 50%; /* Ajusta la anchura máxima del contenedor del mapa según tus necesidades */
+  height: auto; /* Esto mantiene la relación de aspecto de la imagen del mapa */
+  text-align: right; /* Alinea la imagen del mapa a la derecha */
+}
+
+.mapa-imagen {
+  width: 100%; /* Esto hará que la imagen del mapa se ajuste al contenedor */
+  height: auto; /* Esto mantiene la relación de aspecto de la imagen del mapa */
+}
+
+/* #####Servicios##### */
+
+.contenedor-planes-texto {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -200,7 +279,7 @@ body {
   margin-bottom: 20px;
 }
 
-.plans-container-text h2 {
+.contenedor-planes-texto h2 {
   text-align: center;
   font-size: 2em;
   color: #000000;
@@ -209,13 +288,36 @@ body {
   letter-spacing: 1px;
 }
 
-.services-plans {
+.servicios-planes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   background-color: #0A3468;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+/* Responsive Planes*/
+@media (min-width: 768px) {
+  .servicios-planes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #0A3468;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
 }
 
 .plan {
@@ -227,9 +329,12 @@ body {
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   text-align: center;
+
   flex-direction: column;
-  justify-content: center; /* Vertically centers the content */
+  justify-content: center; /* Centra verticalmente el contenido */
 }
+
+
 
 .plan:hover {
   transform: scale(1.05);
@@ -245,9 +350,9 @@ body {
 
 .plan p {
   color: #000000;
-  margin: 0; /* Removes margin to allow flexbox to handle spacing */
+  margin: 0; /* Elimina el margen para permitir que flexbox maneje el espaciado */
   line-height: 1.6;
-  padding: 10px 0; /* Adds padding to create space around the text, if needed */
+  padding: 10px 0; /* Añade padding para crear espacio alrededor del texto, si es necesario */
 }
 
 .plan button {
@@ -260,6 +365,7 @@ body {
   font-size: 18px;
   transition: background 0.3s ease;
 }
+
 .contact {
   position: relative;
   width: 100%;
@@ -281,11 +387,9 @@ body {
   background-size: cover;
   z-index: -1;
 }
-
 .contact-box {
   max-width: 850px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -321,7 +425,7 @@ h4:after {
 
 .field {
   width: 100%;
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 0, 0, 0);
   outline: none;
   background-color: rgba(230, 230, 230, 0.6);
   padding: 0.5rem 1rem;
@@ -361,19 +465,17 @@ textarea {
 
 @media screen and (max-width: 880px) {
   .contact-box {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .left {
-      height: 200px;
+    height: 200px;
   }
 }
-
-.about-us {
+.nosotros {
   padding: 2rem 0;
   background-color: #01A1FF;
 }
-
-.about-us-container {
+.contenedor-nosotros {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -381,7 +483,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.about-us-container h2 {
+.contenedor-nosotros h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -389,8 +491,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
-.services-plans h2 {
+.servicios-planes h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -402,7 +503,7 @@ textarea {
   padding: 2rem 0;
   background-color: #0A3468;
 }
-.app-container {
+.contenedor-app {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -410,7 +511,7 @@ textarea {
   margin-bottom: 20px;
 }
 
-.app-container h2 {
+.contenedor-app h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -418,25 +519,25 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.app-image {
-  text-align: center; /* Centers the image within the container */
+.app-imagen {
+  text-align: center; /* Centra la imagen dentro del contenedor */
 }
-.app-image img {
+.app-imagen img {
   width: 200px;
-  height: auto; /* Maintains the aspect ratio */
-  display: block; /* Ensures the image is displayed as a block */
-  margin: 0 auto; /* Centers the image horizontally */
+  height: auto; /* Mantiene la relación de aspecto */
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 .images-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* If you want the images to be vertically aligned */
+  align-items: center; /* Si quieres que las imágenes estén alineadas verticalmente */
 }
 .images-container a img {
   margin-top: 40px;
   max-width: 80%;
   height: auto;
-  text-align: center; /* Centers the text (and images if their <a> container does not have a defined width) in the center */
+  text-align: center; /* Alinea el texto (y las imágenes si su contenedor <a> no tiene un ancho definido) al centro */
   flex: 1 0 20%;
   padding: 20px;
   margin: 0 10px;
@@ -445,8 +546,8 @@ textarea {
 }
 
 .images-container a {
-  flex: 1; /* This allows the links to occupy the available space */
-  text-align: center; /* Centers the images within the links */
+  flex: 1; /* Esto permite que los enlaces ocupen el espacio disponible */
+  text-align: center; /* Centra las imágenes dentro de los enlaces */
 }
 .containerN {
   width: 90%;
@@ -460,16 +561,16 @@ textarea {
   text-align: center;
   color: white;
   font-size: clamp(
-    16px,
-    4vw,
-    30px
-  ); /* Minimum 16px, preferred size 4vw, maximum 40px */
+          16px,
+          4vw,
+          30px
+  ); /* Mínimo 16px, tamaño preferido 4vw, máximo 40px */
 }
-.services {
+.Servicios {
   padding: 2rem 0rem;
   background: #01A1FF;
 }
-.subServices h2 {
+.subServicios h2 {
   text-align: center;
   font-size: 3em;
   color: white;
@@ -486,10 +587,10 @@ textarea {
 }
 
 .image-column {
-  text-align: center; /* Aligns the text (and images if their <a> container does not have a defined width) in the center */
+  text-align: center; /* Alinea el texto (y las imágenes si su contenedor <a> no tiene un ancho definido) al centro */
   width: calc(
-    33.333% - 40px
-  ); /* Adjust this value according to the 'gap' to ensure that the elements are evenly distributed */
+          33.333% - 40px
+  ); /* Ajusta este valor según el 'gap' para asegurar que los elementos se distribuyan equitativamente */
   flex: 1 0 20%;
   border-radius: 30px;
   padding: 20px;
@@ -505,21 +606,21 @@ textarea {
 
 .image-column p {
   font-size: clamp(
-    16px,
-    4vw,
-    40px
-  ); /* Minimum 16px, preferred size 4vw, maximum 40px */
-  color: white; /* Adjust the text color according to your design */
-  margin-top: 0; /* Removes the top margin to bring the text closer to the image */
+          16px,
+          4vw,
+          40px
+  ); /* Mínimo 16px, tamaño preferido 4vw, máximo 40px */
+  color: white; /* Ajusta el color del texto según tu diseño */
+  margin-top: 0; /* Elimina el margen superior para acercar el texto a la imagen */
 }
 .image-column p2 {
   font-size: clamp(
-    10px,
-    3.5vw,
-    26px
-  ); /* Minimum 18px, viewport relative size 4vw, maximum 36px */
-  color: white; /* Adjust the text color according to your design */
-  margin-top: 0; /* Removes the top margin to bring the text closer to the image */
+          10px,
+          3.5vw,
+          26px
+  ); /* Mínimo 18px, valor relativo a la ventana gráfica 4vw, máximo 36px */
+  color: white; /* Ajusta el color del texto según tu diseño */
+  margin-top: 0; /* Elimina el margen superior para acercar el texto a la imagen */
 }
 .image-column:hover {
   transform: scale(1.05);
@@ -529,7 +630,7 @@ textarea {
   box-shadow: 0px 0px 0px -10px rgba(0, 0, 0, 0.2);
 }
 
-/* Styles for the footer */
+/* Estilos para el pie de pÃ¡gina */
 footer {
   display: flex;
   justify-content: center;
@@ -543,26 +644,26 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Separates the text and icons */
+  justify-content: space-between; /* Separa el texto y los íconos */
   align-items: center;
-  width: 100%; /* Uses the entire width of the footer */
+  width: 100%; /* Utiliza todo el ancho del footer */
 }
 
 .social-icons {
   display: flex;
-  justify-content: flex-end; /* Aligns the icons to the right */
-  margin-right: 40px; /* Slightly shifts the text to the right */
+  justify-content: flex-end; /* Alinea los íconos a la derecha */
+  margin-right: 40px; /* Desplaza el texto ligeramente a la derecha */
 }
 
 .social-icons img {
-  margin-left: 10px; /* Space between icons */
+  margin-left: 10px; /* Espacio entre los íconos */
 }
 .footer-text {
-  flex: 1; /* Allows the text to occupy all the necessary space */
-  text-align: center; /* Ensures the text is centered */
-  margin-left: 140px; /* Slightly shifts the text to the right */
+  flex: 1; /* Permite que el texto ocupe todo el espacio necesario */
+  text-align: center; /* Asegura que el texto esté centrado */
+  margin-left: 140px; /* Desplaza el texto ligeramente a la derecha */
 }
-.title-creators {
+.tiulo-creadores {
   display: flex;
   margin: 5px 0;
   justify-content: center;
@@ -571,14 +672,14 @@ footer {
   flex-direction: row;
 }
 
-.creators-title {
+.creadores-titulo {
   justify-content: center;
   flex-direction: row;
   text-align: center;
   color: #000000;
 }
 
-/* Styles for the creators container */
+/* Estilos para el contenedor de creadores */
 .creators-container {
   display: flex;
   flex-wrap: wrap;
@@ -588,7 +689,7 @@ footer {
   background-color: #f49c7c;
 }
 
-/* Styles for each creator */
+/* Estilos para cada creador */
 .creator {
   margin: 20px;
   display: flex;
@@ -596,7 +697,7 @@ footer {
   align-items: center;
 }
 
-.creators-img {
+.img-creadores {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
